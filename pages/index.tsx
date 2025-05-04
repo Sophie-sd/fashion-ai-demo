@@ -1,17 +1,19 @@
 import React, { useRef } from 'react';
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+// Видаляємо невикористані імпорти Image, Geist, Geist_Mono
+// import Image from "next/image";
+// import { Geist, Geist_Mono } from "next/font/google";
 import { PhotoIcon, SparklesIcon, EyeIcon } from '@heroicons/react/24/outline';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Видаляємо невикористані визначення шрифтів
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+// 
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 const HomePage: React.FC = () => {
   // Ref для доступу до прихованого input
@@ -51,7 +53,7 @@ const HomePage: React.FC = () => {
             <PhotoIcon className="h-6 w-6 text-pink-600" />
             <h2 className="text-2xl font-bold text-pink-600">1. Upload Your Photo</h2>
           </div>
-          <p className="text-gray-600 mb-6">Show us your look, and we'll help you perfect it.</p>
+          <p className="text-gray-600 mb-6">Show us your look, and we&apos;ll help you perfect it.</p>
           {/* Label з градієнтом */}
           <label
             htmlFor="file-upload"
